@@ -1,0 +1,30 @@
+{
+  "name": "nodelogin",
+  "version": "1.0.0",
+  "description": "Simple Authentication and Login system with Node JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanni Michael Tomiwa",
+  "license": "ISC",
+  "dependencies":{
+  	"bcryptjs":"*",
+  	"connect-flash":"*",
+  	"body-parser":"*",
+  	"cookie-parser":"^1.4.1",
+  	"express":"*",
+  	"express-handlebars":"*",
+  	"express-messages":"*",
+  	"express-session":"*",
+  	"express-validator":"*",
+  	"mongodb":"*",
+  	"mongoose":"*",
+  	"passport":"*",
+  	"passport-http":"*",
+  	"passport-local":"*",
+    "socket.io":"*"
+  }
+}
+
+

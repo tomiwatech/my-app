@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+  <title>Angular JS</title>
+    <!-- SCROLLS -->
+  <meta charset="utf-8"/>
+  <meta author="Sanni Michael Tomiwa"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>   
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+
+    <style type="text/css">
+      #messageArea{
+      display: none;
+     }
+    </style>
+
+
+</head>
+<!-- define angular controller -->
+<body  ng-controller="mainController" style="font-family:verdana;font-weight:lighter;background:#eee">
+
+  <nav class="navbar" style="background:#2f3032">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/" style="color: white" >Sanni Michael Tomiwa</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref="home" style="color:white"><i class="fa fa-home"></i> Home</a></li>
+        <li><a ui-sref="about" style="color:white"><i class="fa fa-shield"></i> About</a></li>
+        <li><a ui-sref="contact" style="color:white"><i class="fa fa-comment"></i> Contact</a></li>
+        <li><a ui-sref="chat" style="color:white"><i class="fa fa-comment"></i> Message</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <marquee behavior="alternate" style="color: black">Welcome to tomiwatechnology</marquee>
+
+  <div id="main">
+
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ui-view></div>
+
+  </div>
+
+
+
+  <footer class="text-center" style="background:#2f3032;">
+   <br>
+    <p style="color: white;padding-bottom: 15px">Sanni Michael Tomiwa</p>
+
+    
+
+  </footer>
+
+
+
+</body>
+</html>
